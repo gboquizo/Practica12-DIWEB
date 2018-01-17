@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" id="happenstance-elegantfont-css" href="./css/elegantfont.css?ver=4.7.1" type="text/css" media="all">
+	<link rel="shortcut icon" href="favicon.ico" type="image/png"/>
+	<title>Guillermo Boquizo Sánchez Práctica 12 Casas Rurales</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+	<div class="web">
+		<header class="header">
+			<h1>CASAS RURALES</h1>
+		</header>
+		<main class="contenido">
+			<section class= 'principal' id='principal'>
+				<article class= 'habitacion'>
+                <i class="fa girar fa-5x fa-leaf"></i>
+                 <div class="rotar">
+                 	<button type="submit" onclick="window.location.href='index.html'"><span>Entrar</span></button></div>
+            </article>
+        	</section>	
+        	<button onclick = " topFunction()" id="arribainicio" title="volver arriba">&#9650;</button> 			
+		</main>
+		<footer class="footer">
+			 
+			<span>Guillermo Boquizo Sánchez - Práctica 12 DIWEB 2º DAW IES Gran Capitán</span>
+			<div class="social-icon">
+				<div>
+					<a href="https://www.facebook.com/guillermo.boquizosanchez" target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-3x icon "></i></a>
+					<a href="https://twitter.com/chekke26" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-3x icon"></i></a>
+					<a href="https://www.linkedin.com/in/guillermo-boquizo-s%C3%A1nchez-26152b2b/" target="_blank"><i id="social-li" class="fa fa-linkedin-square fa-3x icon "></i></a>
+					<a href="https://github.com/gboquizo" target="_blank"><i id="social-gh" class="fa fa-github-square fa-3x icon"></i></a>	
+					<a href="mailto:guillermoboquizosanchez@gmail.com?Subject=Hola%20de%20nuevo" target="_blank"><i id="social-em" class="fa fa-envelope-square fa-3x icon"></i></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+<script>
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+	if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) {
+	document.getElementById("arribainicio").style.display = "block";
+	} else {
+		document.getElementById("arribainicio").style.display = "none";
+	}
+}
+function topFunction() {
+	document.body.scrollTop = 0; // For Safari
+	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script> 	
+</body>
+</html>
